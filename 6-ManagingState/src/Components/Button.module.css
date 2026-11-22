@@ -1,0 +1,17 @@
+.button {
+  background-color: rgb(129, 117, 117);
+  color: white;
+  text-align: center;
+  text-decoration: dashed;
+  border: 1px solid black;
+  transition: 0.3s;
+}
+
+.button:hover {
+  background-color: rgb(43, 40, 40);
+  color: white;
+  text-align: center;
+  text-decoration: dashed;
+  border: 1px solid black;
+  transform: scale(1.08);
+}

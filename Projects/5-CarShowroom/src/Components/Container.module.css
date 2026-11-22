@@ -1,0 +1,7 @@
+.container {
+  border: 2px dashed rgb(4, 4, 4);
+  display: block;
+  padding: 30px;
+  margin: 10px;
+  width: 450px;
+}

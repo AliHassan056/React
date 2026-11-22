@@ -1,0 +1,20 @@
+h1{
+  margin: 10px;
+  font-weight: 300;
+  color:green;
+}
+
+#details{
+  background-color: maroon;
+  color: white;
+}
+
+#CurrentTime{
+  background-color: green;
+  color: white;
+  transition: .3s;
+}
+
+#CurrentTime:hover{
+  transform: scale(1.13);
+}

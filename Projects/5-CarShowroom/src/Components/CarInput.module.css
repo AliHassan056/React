@@ -1,0 +1,10 @@
+.CarInput {
+  border-radius: 30px;
+  border: 1px solid black;
+  outline: black;
+  padding: 5px 20px;
+  transition: 0.3s;
+}
+.CarInput:hover {
+  transform: scale(1.2);
+}

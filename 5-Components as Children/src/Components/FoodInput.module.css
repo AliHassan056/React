@@ -1,0 +1,14 @@
+.foodInput{
+  border-radius: 10px;
+  border: 1px solid black;
+  width: 100%;
+  min-width: 30%;
+  padding: 5px 10px;
+  margin: 10px 0px;
+}
+
+
+#searchedQuery{
+  background-color: orange;
+  color: white;;
+}

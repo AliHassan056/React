@@ -1,0 +1,17 @@
+#appTitle {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+#error {
+  color: red;
+  font-size: 12px;
+  padding: 10px;
+  background-color: #f3d2d8;
+  margin: 10px;
+  border-radius: 15px;
+  display: inline-block;
+}
+
+#messageBox {
+  display: inline-block;
+  margin: 5px;
+}
