@@ -5,23 +5,22 @@ import "./App.css";
 import { useState } from "react";
 function App() {
   let buttons = [
+    "C",
+    "%",
+    "/",
+    "*",
     "7",
     "8",
     "9",
-    "/",
+    "-",
     "4",
     "5",
     "6",
-    "*",
+    "+",
     "1",
     "2",
     "3",
-    "-",
-    "0",
-    ".",
     "=",
-    "+",
-    "C",
   ];
 
   let [Expression, setExpression] = useState(0);
