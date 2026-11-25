@@ -4,12 +4,7 @@ import TaskAdder from "./Components/TaskAdder";
 import TaskContainer from "./Components/TasksContainer";
 
 function App() {
-  const [TodoTasks, setTodoTasks] = useState([
-    {
-      taskName: "Go to Gym",
-      taskDate: "12-12-2025",
-    },
-  ]);
+  const [TodoTasks, setTodoTasks] = useState([]);
 
   const taskDetails = (taskName, taskDate) => {
     setTodoTasks([...TodoTasks, { taskName: taskName, taskDate: taskDate }]);
@@ -24,7 +19,7 @@ function App() {
   return (
     <>
       <center>
-        <AppName  app_name={"Todo App v2"}></AppName>
+        <AppName app_name={"Todo App v2"}></AppName>
         <TaskAdder taskDetails={taskDetails}></TaskAdder>
         <TaskContainer
           TodoTasks={TodoTasks}

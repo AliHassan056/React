@@ -6,29 +6,31 @@ function TaskContainer({ TodoTasks, tasktoDelete }) {
   };
   return (
     <div>
-      {TodoTasks.map((task, index) => {
-        return (
-          <div className={styles.taskContainer} key={index}>
-            <div>
-              <p>{task.taskName}</p>
-            </div>
+      {TodoTasks.length > 0
+        ? TodoTasks.map((task, index) => {
+            return (
+              <div className={styles.taskContainer} key={index}>
+                <div>
+                  <p>{task.taskName}</p>
+                </div>
 
-            <div>
-              <p>{task.taskDate}</p>
-            </div>
+                <div>
+                  <p>{task.taskDate}</p>
+                </div>
 
-            <div>
-              <button
-                onClick={() => {
-                  handleDeleteBtn(index);
-                }}
-              >
-                Delete
-              </button>
-            </div>
-          </div>
-        );
-      })}
+                <div>
+                  <button
+                    onClick={() => {
+                      handleDeleteBtn(index);
+                    }}
+                  >
+                    Delete
+                  </button>
+                </div>
+              </div>
+            );
+          })
+        : (<p>No Tasks Yet :(</p>)}
     </div>
   );
 }
