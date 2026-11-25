@@ -1,5 +1,6 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import styles from "./TaskAdder.module.css";
+import { IoIosAddCircleOutline } from "react-icons/io";
 import { useState } from "react";
 function TaskAdder({ taskDetails }) {
   const [taskName, setTaskName] = useState("");
@@ -34,7 +35,9 @@ function TaskAdder({ taskDetails }) {
           <input onChange={HandleTaskDate} type="date" value={taskDate} />
         </div>
         <div>
-          <button onClick={handleTaskClick}>Add</button>
+          <button onClick={handleTaskClick}>
+            <IoIosAddCircleOutline />
+          </button>
         </div>
       </div>
     </>
