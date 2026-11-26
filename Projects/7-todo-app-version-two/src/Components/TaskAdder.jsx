@@ -14,15 +14,19 @@ function TaskAdder({ taskDetails }) {
     setTaskDate(event.target.value);
   };
 
-  const handleTaskClick = () => {
+  const handleTaskClick = (event) => {
+    console.log(event);
+    event.preventDefault();
+    
     taskDetails(taskName, taskDate);
     setTaskName("");
     setTaskDate("");
+    
   };
 
   return (
     <>
-      <div className={styles.taskAdder}>
+      <form className={styles.taskAdder} onSubmit={handleTaskClick}>
         <div>
           <input
             onChange={HandleTaskName}
@@ -35,11 +39,11 @@ function TaskAdder({ taskDetails }) {
           <input onChange={HandleTaskDate} type="date" value={taskDate} />
         </div>
         <div>
-          <button onClick={handleTaskClick}>
+          <button>
             <IoIosAddCircleOutline />
           </button>
         </div>
-      </div>
+      </form>
     </>
   );
 }
