@@ -1,0 +1,15 @@
+.taskAdder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px;
+  gap: 10px;
+}
+
+.taskAdder input {
+  padding: 8px;
+}
+
+.taskAdder button {
+  padding: 8px 20px;
+}
